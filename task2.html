@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task2</title>
+</head>
+<body>
+<table id="table">
+  <tr>
+    <th>#</th>
+    <th>FirstName</th>
+    <th>LastName</th>
+    <th>ID</th>
+  </tr>
+  <tr>
+    <th>1</th>
+    <td>Mark</td>
+    <td>Otto</td>
+    <td>001</td>
+  </tr>
+
+  <tr>
+    <th>2</th>
+    <td>Jacob</td>
+    <td>Thornton</td>
+    <td>002</td>
+  </tr>
+
+  <tr>
+    <th>3</th>
+    <td>Larry</td>
+    <td>CableGuy</td>
+    <td>003</td>
+  </tr>
+</table>
+
+<button type="button" onclick="backgroundChange1()">Click Me for 1</button>
+
+
+<script>
+  //document.getElementById("table").style.backgroundColor = "blue";
+
+  // Access to the HTML Element
+  table = document.getElementById("table");
+
+  function backgroundChange1(){
+      table.style.backgroundColor = "red";
+
+  }
+
+
+</script>
+</body>
+</html>
