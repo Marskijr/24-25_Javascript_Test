@@ -5,8 +5,9 @@
     <title>Challenge 3</title>
 </head>
 <body>
-<img src="../img/gio.webp" width="100px" id="img" onmouseout="appear()" onmouseover="dissappear()">
+<img src="../img/onepiece.jpg" width="100px" id="img" onmouseout="appear()" onmouseover="dissappear()">
 
+    <button type="button" onclick="toggle()">Toggle</button>
 
     <script>
         function dissappear(){
@@ -16,8 +17,17 @@
         function appear(){
         document.getElementById('img').style.display = "block";
     }
+
+        function toggle(){
+
+        const image = document.getElementById("turkey");
+
+        if(image.style.display === "block"){
+        image.style.display = "none";
+    }else{
+        image.style.display = "block";
+    }
+    }
     </script>
 </body>
 </html>
-
-/* Put code for the task below */
